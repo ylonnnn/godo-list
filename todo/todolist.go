@@ -24,7 +24,7 @@ func (list *EntryList) CreateEntry(desc string) {
 	entryLen := len(list.Entries)
 	latestId := 0
 
-	// If there are currently no entries in the list
+	// Use the id of latest entry if there are any entries
 	if entryLen > 0 {
 		latestId = list.Entries[entryLen-1].Id
 	}
